@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwindcss/forms;
+
+.main-bg {
+    position: absolute;
+    z-index: 0;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    opacity: 0.9;
+    filter: brightness(0.7);
+}
+
+.input-group>.form-control,
+.input-group>.btn {
+    border-radius: 0 !important;
+
+}
+
+.left-side {
+    border: 2px rgba(255, 255, 255, 0.523) solid;
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+    backdrop-filter: blur(10px);
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.search-bar {
+    background-color: transparent !important;
+    border-radius: 0;
+    color: rgba(255, 255, 255, 0.585) !important;
+    border-bottom: 1px #dee2e6 solid !important;
+    /* box-shadow: none !important; */
+}
+
+.search-bar:focus {
+    box-shadow: none !important;
+    color: white !important;
+}
+
+.description {
+    font-size: 14px;
+    opacity: 0.8;
+}
